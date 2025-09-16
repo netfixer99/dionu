@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyHub - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 StudyHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Subjects ▼</button>
+        <div class="dropdown-content">
+          <a href="maths.html">Mathematics</a>
+          <a href="physics.html">Physics</a>
+          <a href="chemistry.html">Chemistry</a>
+          <a href="cs.html">Computer Science</a>
+        </div>
+      </div>
+      <a href="#">Quiz Generator</a>
+      <a href="#">Study Tips</a>
+      <a href="#">AI Summary</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to StudyHub!</h2>
+    <p>Your all-in-one platform for notes, quizzes, study tips, and AI-powered learning ✨</p>
+
+    <div class="features">
+      <div class="card">
+        <h3>📘 Subject Notes</h3>
+        <select onchange="location.href=this.value">
+          <option selected disabled>-- Choose Subject --</option>
+          <option value="maths.html">Mathematics</option>
+          <option value="physics.html">Physics</option>
+          <option value="chemistry.html">Chemistry</option>
+          <option value="cs.html">Computer Science</option>
+        </select>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
